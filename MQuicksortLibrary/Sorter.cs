@@ -58,11 +58,11 @@ namespace MQuicksortLibrary
 			}
 			if (left < b)
 			{
-				QuickSortRecursive (list, left, b, comparer); 
+				list.QuickSortThread(left,b, comparer);
 			}
 			if (a < right)
 			{
-				QuickSortRecursive (list, a, right, comparer);
+				list.QuickSortThread(a, right,  comparer);
 			}
 		}
 	}
