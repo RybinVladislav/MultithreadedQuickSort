@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="MQuicksortLibrary/Sorter.cs">
     <Files>
-      <File FileName="MultithreadingQuicksort/Program.cs" Line="1" Column="1" />
-      <File FileName="MQuicksortLibrary/Sorter.cs" Line="17" Column="17" />
+      <File FileName="MultithreadingQuicksort/Program.cs" Line="10" Column="10" />
+      <File FileName="MQuicksortLibrary/Sorter.cs" Line="1" Column="1" />
       <File FileName="../ObjProg/ObjProg/SetException.cs" Line="1" Column="1" />
       <File FileName="../Lection2/Lection2/Program.cs" Line="1" Column="1" />
     </Files>

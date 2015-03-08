@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 using MQuicksortLibrary;
 
 
@@ -18,13 +19,16 @@ namespace MultithreadingQuicksort
 		}
 		public static void Main (string[] args)
 		{
-			List<int> array = new List<int> ();
+			int[] array = new int[500000];
 			Random rnd = new Random ();
-			for (int i =0; i<20;i++)
-				array.Add(rnd.Next(0,100));
+			for (int i =0; i<array.Length;i++)
+				array[i]=rnd.Next(0,1000000);
+			DateTime start = DateTime.Now;
 			array.QuickSort (MyCompare);
-			for(int i =0; i<array.Count;i++)
-				Console.Write ("{0} ",array[i]);
+			DateTime finish = DateTime.Now;
+			/*for(int i =0; i<array.Length;i++)
+				Console.Write ("{0} ",array[i]);*/
+			Console.WriteLine ("\ndone in {0} s",(finish-start).TotalSeconds);
 		}
 	}
 }
